@@ -1,0 +1,9 @@
+{
+"roadSize":3,
+"sideSpeed":3,
+"forwardMaxSpeedPlayer":10,
+"speedAddToEnemy":0.3,
+"forwardSlowedSpeedPlayer":9,
+"timeSlowed":1.5,
+"enemyHealth":1
+}

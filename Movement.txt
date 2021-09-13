@@ -1,0 +1,10 @@
+How the movement works:
+The character will try to "replicate" the position of his finger with respect to the screen with his position with respect to the road:
+if the player touches the leftmost point of his screen, the character will move towards the leftmost part of the street, if he touches the rightmost point then he moves the character towards the rightmost part of the street and if he touches the center he moves it towards the central part of the street.
+
+Update()
+In Update(), I get the touch.position.x and using the Scale function I convert it to a point on the X axis in game between the 2 edges of the road.
+
+FixedUpdate()
+In FixedUpdate(), I use "forwardActualSpeed" to get a Vector3 to use for forward movement along the road. After that, I calculate the distance between the point where the character is and the point he will have to reach and I use it to create the Vector3 that I will multiply by "sideSpeed": this will be used to move the character on the X axis.
+Finally, I use Rigidbody.MovePosition and passing it the position plus the vector of the forward movement and the one of the side movement I move the character in the desired direction and speed.

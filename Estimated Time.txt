@@ -1,0 +1,16 @@
+The time taken to implement the various aspects of this game will be indicated as follows:
+
+Example task: 1h  |  1h30'
+
+The name indicates a certain phase of the development of this project, the first value indicates the time that I initially estimated as necessary for the implementation while the second value indicates the time that I really took for the implementation.
+
+Player movement:  2h45'  |  3h30'
+Gun and bullet:  1h  |  1h
+Camera following the player:  20'  |  20'
+Countdown before start:  30'  |  30'
+Check for victory:  3h  |  2h30'
+Setup scene in editor:  2h  |  1h30'
+Enemy movement : 2h30'  |  1h30'
+Check for defeat: 15'  |  15'
+Destructible walls that slow down the player:  1h  |  30'
+Animations and particles:  2h  |  2h

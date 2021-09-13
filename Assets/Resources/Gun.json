@@ -1,0 +1,5 @@
+{
+"bulletSpeed":800,
+"rateOfFireInSeconds":1.5,
+"bulletDamage":10
+}

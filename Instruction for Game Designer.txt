@@ -1,0 +1,35 @@
+In this file I explain what the variables in the .json files represent, so that they can be modified at will to test different possibilities.
+The json files can be found in Assets>Resources.
+
+------------------------------------------------------------------------------------
+
+GameManager.json
+"delayToStartInSeconds": this will set the duration of the initial countdown
+
+"activeEnemies": this will change the number of enemies that will be activated at the start of the scene. The enemies are already instantiated and are activated by the GameManager at the beginning of the scene, the maximum number of enemies that can be activated is 18; you can increase the maximum amount by adding more enemies in the scene.
+
+------------------------------------------------------------------------------------
+
+Gun.json
+"bulletSpeed": this will be the force applied to the bullet when fired
+
+"rateOfFireInSeconds": this value sets the rate of fire of the gun, setting the seconds that will elapse from the firing of one bullet to the next firing
+
+"bulletDamage": the damage dealt by the bullet to the enemies
+
+------------------------------------------------------------------------------------
+
+PlayerAndEnemyData.json
+"roadsize": this will tell the player script how many units the road is large, so it can covert correctly the input
+
+"sideSpeed": this value indicates the speed at which the player can move left and right
+
+"forwardMaxSpeedPlayer": this is the speed the player will have when running without hitting any wall
+
+"speedAddToEnemy": since the enemy is always faster than the player, this is the speed that will be added to "forwardMaxSpeedPlayer" in the enemy script; if this value is negative, the enemy will be slower than the player
+
+"forwardSlowedSpeedPlayer": this is the speed when the player hit a wall. This value should be lower than the "forwardMaxSpeedPlayer"
+
+"timeSlowed": this indicates how many seconds the player will be slowed down after hitting a wall
+
+"enemyHealth": this will set the enemy health. Now they die with 1 hit, since they have 1HP and the bullet does 10 damage
